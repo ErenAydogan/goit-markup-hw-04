@@ -43,6 +43,7 @@ img {
   display: flex;
 }
 .header__navigation {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -53,7 +54,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #404bbf;
   margin-right: 76px;
 }
 .header__navigation__logo-studio {
@@ -70,12 +71,23 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__navigation__list-item__link:hover {
   color: #404bbf;
 }
 .header__navigation__list-item__link:focus {
   color: #404bbf;
+}
+.header__navigation__list-item::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 .header__navigation__contact {
   font-style: normal;
@@ -89,6 +101,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__navigation__contact-list__link:hover {
   color: #404bbf;
