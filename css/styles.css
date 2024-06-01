@@ -386,5 +386,8 @@ img {
 .footer-container__social-list__item-link:hover, .footer-container__social-list__item-link:focus {
   background-color: #31D0AA;
 }
+.footer-container__social-list__item-link__icon {
+  fill: #f4f4fd;
+}
 
 /*# sourceMappingURL=styles.css.map */
