@@ -170,6 +170,20 @@ img {
 .how-we-work__list-item {
   width: calc((100% - 72px) / 4);
 }
+.how-we-work__list-item__icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
+.how-we-work__list-item__icon-container svg {
+  width: 6.4em;
+  height: 6.4em;
+}
 .how-we-work__list-item__title {
   margin-bottom: 8px;
 }

@@ -185,6 +185,8 @@ img {
 
 .how-we-work {
     padding: 120px 0;
+    
+    
 
     &__title,
     &__list-item__title {
@@ -201,6 +203,21 @@ img {
 
         &-item {
             width: calc((100% - 72px) / 4);
+
+            &__icon-container{
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                height: 112px; 
+                background-color: #f4f4fd;
+                border-radius: 4px;
+                border: 1px solid #8e8f99; 
+                margin-bottom: 8px;
+                & svg {
+                    width: 6.4em;
+                    height: 6.4em;
+                }
+            }
 
             &__title {
                 margin-bottom: 8px;
